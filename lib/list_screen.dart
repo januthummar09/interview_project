@@ -68,6 +68,7 @@ class _ListScreenState extends State<ListScreen> {
                             'Are you sure you want to delete this data?'),
                         actions: <CupertinoDialogAction>[
                           CupertinoDialogAction(
+                            
                             onPressed: () {
                               Navigator.pop(context);
                             },
@@ -84,7 +85,10 @@ class _ListScreenState extends State<ListScreen> {
                       ),
                     ),
                     child: Container(
-                      margin: const EdgeInsets.all(20),
+                      margin: const EdgeInsets.symmetric(
+                        horizontal: 10,
+                        vertical: 20,
+                      ).copyWith(bottom: 0),
                       padding: const EdgeInsets.all(16),
                       decoration: BoxDecoration(
                         color: Colors.white,
@@ -201,7 +205,10 @@ class _ListScreenState extends State<ListScreen> {
                       );
                     },
                     child: Container(
-                      margin: const EdgeInsets.all(20),
+                      margin: const EdgeInsets.symmetric(
+                        horizontal: 10,
+                        vertical: 20,
+                      ).copyWith(bottom: 0),
                       padding: const EdgeInsets.all(16),
                       decoration: BoxDecoration(
                         color: Colors.white,
